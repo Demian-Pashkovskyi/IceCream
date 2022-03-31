@@ -1,0 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-apostrof {
+  width: 1.349609375em;
+}
+
+.icon-Btn-4_buy-now {
+  width: 3.61328125em;
+}
+
+.icon-girl4 {
+  width: 1.26171875em;
+}
+
+.icon-Group16 {
+  width: 0.935546875em;
+}
+
+.icon-Group23 {
+  width: 1.2109375em;
+}
+
+.icon-ice7 {
+  width: 0.423828125em;
+}
+
+.icon-icon1_vidro {
+  width: 0.66015625em;
+}
+
+.icon-icon3_ledenci {
+  width: 0.8798828125em;
+}
+
+.icon-logo_header {
+  width: 3.98046875em;
+}
+
+.icon-milk5 {
+  width: 0.986328125em;
+}
+
+.icon-slider-pic4-1_girl {
+  width: 1.26171875em;
+}
