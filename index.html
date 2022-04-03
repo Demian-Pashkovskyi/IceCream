@@ -1,127 +1,224 @@
 <!DOCTYPE html>
 <html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/slick.css">
+		<link rel="stylesheet" href="css/slick-theme.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+	</head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/main.min.css">
-</head>
+	<body id="body">
 
-<body>
-	<!-- Hero Header -->
 
-	<header class="header">
-		<div class="header-container">
-			<nav class="header-hero">
-				<a href="#" class="header-hero__logo">
-					<svg class="header-hero__icons" width="199" height="50">
-						<use href="./images/logoheader.svg"></use>
-					</svg>
-				</a>
-				<ul class="header-nav">
-					<li class="header-nav__item">
-						<a href="#" class="header-nav_link">Home</a>
-					</li>
-					<li class="header-nav__item">
-						<a href="#" class="header-nav_link">About us</a>
-					</li>
-					<li class="header-nav__item">
-						<a href="#" class="header-nav_link">How it’s made?</a>
-					</li>
-					<li class="header-nav__item">
-						<a href="#" class="header-nav_link">Our products</a>
-					</li>
-					<li class="header-nav__item">
-						<a href="#" class="header-nav_link">Contact</a>
-					</li>
-				</ul>
-				<button class="header-nav__button" type="submit">
-					<span>Buy now</span>
-					<svg class="header-nav__icon" width="26" height="26">
-						<use href="./images/Vector1Header.svg"></use>
+		<header class="header">
+			<div class="header-container">
+				<nav class="header-nav">
+					<a href="index.html" class="header__logo">
+						<svg class="header__icons" width="145" height="31">
+							<use href="./images/icons.svg#icon-WebStudio"></use>
+						</svg></a>
+
+					<ul class="site-nav">
+						<li class="site-nav__item">
+							<a href="index.html" class="site-nav__link site-nav__link--active">Студия</a>
+						</li>
+						<li class="site-nav__item"><a href="./portfolio.html " class="site-nav__link">Портфолио</a></li>
+						<li class="site-nav__item"><a href="index.html" class="site-nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+
+				<button type="button" class="mob-modal-btn" aria-expanded="false" aria-controls="menu-contaiter"
+					data-menu-button>
+					<svg class="mob-modal__icons" width="40px" height="40px" aria-label="Переключатель меню">
+						<use class="icon-menu" href="./images/icons.svg#icon-menu_40px"></use>
+						<use class="icon-close" href="./images/icons.svg#icon-close_40px"></use>
 					</svg>
 				</button>
-			</nav>
-			<div class="header-products">
-				<h1 class="header-products__title">ice cream made with <span class="header__title-red">passion</span></h1>
-				<div class="header-button">
-					<ul class="header-button-list">
-						<li class="header-button-list__title">
-							<button class="header-button__red" type="button">Products</button>
-						</li>
-						<li class="header-button-list__title">
-							<button class="header-button__white" type="button">How it’s made?</button>
-						</li>
-					</ul>
+				<div class="menu-container" data-menu id="menu-container">
+					<div class="mob-menu__form">
+						<ul class="mob-site-nav">
+							<li class="mob-site-nav__item">
+								<a href="index.html" class="mob-site-nav__link mob-site-nav__link--active">Студия</a>
+							</li>
+							<li class="mob-site-nav__item"><a href="./portfolio.html "
+									class="mob-site-nav__link">Портфолио</a></li>
+							<li class="mob-site-nav__item"><a href="index.html" class="mob-site-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mob-menu__botton">
+						<ul class="mob-header-contacts">
+							<li class="mob-header-contacts__item">
+								<a href="mailto:info@devstudio.com" class="mob-header-contacts__mail">
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="mob-header-contacts__item">
+								<a href="tel:+380961111111" class="mob-header-contacts__phone">
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+						<ul class="mob-soc-nav">
+							<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Instagram</a></li>
+							<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Twitter</a></li>
+							<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">Facebook</a></li>
+							<li class="mob-soc-nav__item"><a href="#" class="mob-soc-nav__link">LinkedIn</a></li>
+						</ul>
+					</div>
 				</div>
-			<div class="header-work">
-					<img src="./images/slider-pic5milk.jpg" alt="Кувшин молока">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-					</p>
-						<button class="header-work__button">
-						<svg class="header-work__slider" width="4" height="4">
-						<use href="./images/arrow-right3.svg"></use>
+			</div>
+
+			<ul class="header-contacts">
+				<li class="header-contacts__item">
+					<a href="mailto:info@devstudio.com" class="header-contacts__link">
+						<svg class="header-contacts__mail">
+							<use href="./images/icons.svg#icon-imei"></use>
 						</svg>
-						</button>
-			</div>
-			</div>
-			<div class="header-images">
-			<img src="./images/Ellipse3.svg" alt="Ellipse">
-			<img src="./images/slider-pic7ice-hero.jpg" alt="Ice">
-			</div>
-			<div class="header-icon">
-			<img src="./images/Group16.svg" alt="16" width="92" height="76">
-			<img src="./images/Group23.svg" alt="23" width="92" height="76">
-			<img src="./images/slider-pic4girl.jpg" alt="Gigl" width="304" height="241">
-			</div>
-		</div>
-	</header>
-	<main>
+						info@devstudio.com
+					</a>
+				</li>
+				<li class="header-contacts__item">
+					<a href="tel:+380961111111" class="header-contacts__link">
+						<svg class="header-contacts__phone">
+							<use href="./images/icons.svg#icon-phone"></use>
+						</svg>
+						+38 096 111 11 11
+					</a>
+				</li>
+			</ul>
+</div>
+</header>
+    <main>
+    <!--Контент контакти-->
 
-		<!-- Products -->
+    <h1>Контакти</h1>
+	<div class="customer">
+		<div class="container-customer">
+			  <div class="customer__slider">
+				  <img src="./images/testimonials11.png" alt="Картинка слайда1" class="customer__img">
+				  <div class="customer__list">
+				  <p class="customer__text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+            hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+				  </div>
+					<h3 class="customer__title">Emily, Los Angeles</h3>
+			  </div>
+			  <div class="customer__slider">
+				  <img src="./images/testimonials12.png" alt="Картинка слайда2" class="customer__img">
+				  <div class="customer__list">
+				  <p class="customer__text">Highly recommend this produdt for mamy good things, especially for digestive problems</p>
+				  </div>
+				  <h3 class="customer__title">Dana, New York</h3>
+			  </div>
+			  <div class="customer__slider">
+				  <img src="./images/testimonials13.png" alt="Картинка слайда3" class="customer__img">
+				  <div class="customer__list">
+				  <p class="customer__text">Fresh product! Very tasty! Too bad the package is small. We finished it too fast</p>
+				  </div>
+				  <h3 class="customer__title">Miriam Asya, Toronto</h3>
+			  </div>
+		</div>	
+	</div>
+    </main>
 
-		<section class="products">
-			<div class="products-container">
-				<p class="products-label">100% natural</p>
-				<h2 class="products__title">products</h2>
-				<ul class="products-list">
-					<li class="products-list__item">
-						<div class="products-list__label">
-							<h3 class="products-list__title">ice cream</h3>
-							<img src="./images/Group4.svg" alt="Три крапки">
-							<p class="products-list__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-							</p>
-							<button class="products-button" type="button">
-								<svg class="products-button__slider" width="39" height="40">
-									<use href="./images/arrowright4.svg"></use>
-								</svg>
-							</button>
-							<div class="products-list__submenu">
-								<img src="./images/home-pic1ice.jpg" alt="ice">
-							</div>
-						</div>
-					</li>
-				</ul>
-			</div>
+    <!--Page Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="order-adress">
+          <a href="index.html" class="footer__link">
+            <svg class="socials-list__icon" width="145" height="31">
+              <use href="./images/icons.svg#icon-WebStudio_footer"></use>
+            </svg>
+          </a>
+          <ul class="order-adress__list">
+            <li class="footer__item">
+              <a
+                class="footer__list"
+                href="https://goo.gl/maps/K7o9gSTaup2MySCS8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                г. Киев, пр-т Леси Украинки, 26
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="info@example.com" class="footer__adress">info@example.com</a>
+            </li>
+            <li class="footer__item">
+              <a href="tel:+380961111111" class="footer__adress">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-nav">
+          <p class="footer-nav__sets">присоединяйтесь</p>
+          <ul class="socials-lists">
+            <li class="socials-lists__item socials-lists__item--footer">
+              <a class="socials-lists__link socials-lists__link--footer" href="instagram">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-lists__item socials-lists__item--footer">
+              <a class="socials-lists__link socials-lists__link--footer" href="twiter">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-lists__item socials-lists__item--footer">
+              <a class="socials-lists__link socials-lists__link--footer" href="facebook">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-lists__item socials-lists__item--footer">
+              <a class="socials-lists__link socials-lists__link--footer" href="linkedin">
+                <svg width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscription-container">
+          <p class="footer-nav__sets">Подпишитесь на рассылку</p>
+          <form class="subscription-form">
+            <div class="subscription__discus">
+              <!-- <label for="mail"></label> -->
+              <input
+                class="subscription__input"
+                type="email"
+                name="E-mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button class="subscription-button__snd" type="submit">
+                <span>Подписаться</span>
+                <svg class="subscription-button__icon">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </footer>
 
-		</section>
-
-		<aside>
-			Здесь могла быть ваша реклама.
-		</aside>
-	</main>
-	<footer>
-		Подвал сайта
-	</footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="./js/slick.js"></script>
+	<script src="./slick/slick.min.js"></script>
 </body>
-
 </html>
