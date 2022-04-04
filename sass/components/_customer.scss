@@ -80,7 +80,7 @@
   margin-top: 32px;
   margin-bottom: 36px;
   padding: 43px 50px 17px 50px;
-  // position: relative;
+  position: relative;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;
@@ -121,7 +121,7 @@
   background-image: repeating-linear-gradient(#E1E1E1, #FAFAFA 1px, transparent 1px, transparent 32px);
 }
 
-.customer__text::before {
+.customer__list::before {
   // content: url("/images/lao.png");
   content: "";
   position: absolute;
@@ -137,9 +137,9 @@
   background-image: url("/images/lao.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  position: absolute;
   top: 15px;
   left: 80px;
+  display: inline-block;
   // content: "\201e";
   // background: #E1E1E1;
   // transform: rotate(-180deg);
@@ -153,6 +153,11 @@
   // font-weight: bold;
 }
 
+.customer__dot {
+  margin-left: auto;
+  margin-right: auto;
+
+}
 .customer__title {
   font-family: "DM Sans";
   font-style: normal;
@@ -170,110 +175,3 @@
   display: none;
 }
 
-// .slick-dots {
-//   position: relative;
-//   bottom: 59px;
-//   display: flex;
-//   list-style: none;
-//   display: block;
-//   text-align: center;
-//   padding: 0;
-//   margin: 0;
-//   width: 100%;
-
-//   &:before {
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             content: $slick-dot-character;
-//             width: 20px;
-//             height: 20px;
-//             font-family: $slick-font-family;
-//             font-size: 20px;
-//             line-height: 20px;
-//             text-align: center;
-//             color: blue;
-//             opacity: $slick-opacity-not-active;
-//             -webkit-font-smoothing: antialiased;
-//             -moz-osx-font-smoothing: grayscale;
-//           }
-// }
-
-// .slick-active button:before {
-//   color: red;
-//   opacity: $slick-opacity-default;
-//   background-image: url(/images/Group8.png);
-
-
-// }
-
-// .tablist {
-//   display: none;
-//   list-style: none;
-//   visibility: hidden;
-// }
-// .butto#slick-slide-control00::before {
-//   display: none;
-//   list-style: none;
-//   visibility: hidden;
-// }
-
-// .slick-dots {
-//   position: absolute;
-//   bottom: -25px;
-//   list-style: none;
-//   display: block;
-//   text-align: center;
-//   padding: 0;
-//   margin: 0;
-//   width: 100%;
-//   li {
-//     position: relative;
-//     display: inline-block;
-//     height: 20px;
-//     width: 20px;
-//     margin: 0 5px;
-//     padding: 0;
-//     cursor: pointer;
-//     button {
-//       border: 0;
-//       background: transparent;
-//       display: block;
-//       height: 20px;
-//       width: 20px;
-//       outline: none;
-//       line-height: 10px;
-//       font-size: 10px;
-//       color: transparent;
-//       padding: 5px;
-//       cursor: pointer;
-//       &:hover,
-//       &:focus {
-//         outline: none;
-//         &:before {
-//           opacity: $slick-opacity-on-hover;
-//         }
-//       }
-//       &:before {
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         content: $slick-dot-character;
-//         width: 20px;
-//         height: 20px;
-//         font-family: $slick-font-family;
-//         font-size: 20px;
-//         line-height: 20px;
-//         text-align: center;
-//         color: $slick-dot-color;
-//         opacity: $slick-opacity-not-active;
-//         -webkit-font-smoothing: antialiased;
-//         -moz-osx-font-smoothing: grayscale;
-//       }
-//     }
-//     &.slick-active button:before {
-//       color: $slick-dot-color-active;
-//       opacity: $slick-opacity-default;
-//       background-image: url(/images/Group8.png);
-//     }
-//   }

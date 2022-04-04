@@ -356,6 +356,7 @@ html {
   margin-top: 32px;
   margin-bottom: 36px;
   padding: 43px 50px 17px 50px;
+  position: relative;
 }
 @media screen and (min-width: 480px) {
   .customer__list {
@@ -398,7 +399,7 @@ html {
   background-image: repeating-linear-gradient(#E1E1E1, #FAFAFA 1px, transparent 1px, transparent 32px);
 }
 
-.customer__text::before {
+.customer__list::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -413,9 +414,14 @@ html {
   background-image: url("/images/lao.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  position: absolute;
   top: 15px;
   left: 80px;
+  display: inline-block;
+}
+
+.customer__dot {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customer__title {
@@ -448,7 +454,6 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-  bottom: 59px;
   text-align: center;
   padding: 0;
   margin: 0;
