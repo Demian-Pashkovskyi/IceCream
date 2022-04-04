@@ -1,36 +1,70 @@
 .container {
   // display: flex;
   align-items: center;
-  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: aqua;
+  margin: 0px auto;
+  min-width: 320px;
 
-  //   @media screen and (min-width: 480px) {
-  //     max-width: 479px;
-  //   }
+    // @media screen and (min-width: 480px) {
+    //   width: 480px;
+    // }
 
-  //   @media screen and (min-width: 768px) {
-  //     max-width: 767px;
-  //   }
+    // @media screen and (min-width: 768px) {
+    //   width: 768px;
+    // }
 
-  //   @media screen and (min-width: 1280px) {
-  //     max-width: 1279px;
-  //   }
+    // @media screen and (min-width: 1280px) {
+    //   width: 1280px;
+    // }
 }
 
 .container-customer {
-  max-height: 590 px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 642px;
+  padding-top: 80px;
+  padding-bottom: 48px;
+  
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    // max-height: 522px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    // max-height: 590px;
+    padding-top: 114px;
+    padding-bottom: 120px;
+  }
 }
+
 .customer__slider {
-  //   max-width: 1034px;
-  margin-left: 123px;
-  margin-right: 123px;
+
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+    max-width: 768px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    padding-left: 123px;
+    padding-right: 123px;
+    max-width: 1280px;
+  }
 }
 .customer__img {
   margin-left: auto;
@@ -40,13 +74,34 @@
 .customer__list {
   background: #fafafa;
   display: flex;
-  height: 138px;
+  height: 308px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 36px;
-  padding: 32px 106px;
-  position: relative;
+  padding: 43px 50px 17px 50px;
+  // position: relative;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    height: 164px;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding: 20px 6px 36px 6px;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    height: 138px;
+    margin-top: 22px;
+    margin-bottom: 36px;
+    padding: 32px 106px;
+
+  }
 }
 .customer__text {
   display: flex;
@@ -61,14 +116,41 @@
   color: #000000;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
   //   border-bottom: 2px solid #000;
+  background-image: repeating-linear-gradient(#E1E1E1, #FAFAFA 1px, transparent 1px, transparent 32px);
 }
 
-.customer__list::before {
-  content: url("/images/lao.png");
+.customer__text::before {
+  // content: url("/images/lao.png");
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 64px;
+  width: 72px;
+  background-size: 72px 64px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: -32px;
+  margin-top: -36px;
+  background-image: url("/images/lao.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   position: absolute;
   top: 15px;
   left: 80px;
+  // content: "\201e";
+  // background: #E1E1E1;
+  // transform: rotate(-180deg);
+  // position: absolute;
+  // top: -16px;
+  // left: 6px;
+  // font-family: Georgia,
+  // serif;
+  // font-size: 40px;
+  // line-height: 1;
+  // font-weight: bold;
 }
 
 .customer__title {
@@ -90,7 +172,7 @@
 
 .slick-dots {
   position: relative;
-  bottom: 55px;
+  bottom: 59px;
   display: flex;
   list-style: none;
   display: block;
@@ -98,6 +180,31 @@
   padding: 0;
   margin: 0;
   width: 100%;
+
+  &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: $slick-dot-character;
+            width: 20px;
+            height: 20px;
+            font-family: $slick-font-family;
+            font-size: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: blue;
+            opacity: $slick-opacity-not-active;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+          }
+}
+
+.slick-active button:before {
+  color: red;
+  opacity: $slick-opacity-default;
+  background-image: url(/images/Group8.png);
+
+
 }
 
 // .tablist {

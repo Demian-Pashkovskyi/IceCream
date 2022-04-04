@@ -289,21 +289,57 @@ html {
   align-items: center;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: aqua;
+  margin: 0px auto;
+  min-width: 320px;
 }
 
 .container-customer {
-  max-height: 590 px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 642px;
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 480px) {
+  .container-customer {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-customer {
+    max-width: 768px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container-customer {
+    max-width: 1280px;
+    padding-top: 114px;
+    padding-bottom: 120px;
+  }
 }
 
-.customer__slider {
-  margin-left: 123px;
-  margin-right: 123px;
+@media screen and (min-width: 320px) {
+  .customer__slider {
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__slider {
+    padding-left: 74px;
+    padding-right: 74px;
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__slider {
+    padding-left: 123px;
+    padding-right: 123px;
+    max-width: 1280px;
+  }
 }
 
 .customer__img {
@@ -314,13 +350,35 @@ html {
 .customer__list {
   background: #fafafa;
   display: flex;
-  height: 138px;
+  height: 308px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 36px;
-  padding: 32px 106px;
-  position: relative;
+  padding: 43px 50px 17px 50px;
+}
+@media screen and (min-width: 480px) {
+  .customer__list {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customer__list {
+    height: 164px;
+    max-width: 768px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    padding: 20px 6px 36px 6px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .customer__list {
+    max-width: 1280px;
+    height: 138px;
+    margin-top: 22px;
+    margin-bottom: 36px;
+    padding: 32px 106px;
+  }
 }
 
 .customer__text {
@@ -336,10 +394,25 @@ html {
   color: #000000;
   margin-right: auto;
   margin-left: auto;
+  align-items: center;
+  background-image: repeating-linear-gradient(#E1E1E1, #FAFAFA 1px, transparent 1px, transparent 32px);
 }
 
-.customer__list::before {
-  content: url("/images/lao.png");
+.customer__text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 64px;
+  width: 72px;
+  background-size: 72px 64px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-left: -32px;
+  margin-top: -36px;
+  background-image: url("/images/lao.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   position: absolute;
   top: 15px;
   left: 80px;
